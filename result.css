@@ -1,0 +1,297 @@
+/*  designing main container */
+.mc{
+    width: 500px;
+    height:700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  
+
+    
+
+}
+/* designing main container end */
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+/*  designing body and adjustment of mc container  */
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background: black;
+}
+/*  designing body--end */
+
+    
+/* ----------------------------------------------------------------------------------------------------- */
+
+/*  two section designing of--- result summary */
+.Result{
+    width:250px;
+    height: 350px;
+    background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-top-left-radius: 18px;
+}
+.Summary{
+    width:250px;
+    height: 350px;
+    background: white;
+    border-bottom-right-radius: 18px;
+}
+/*  two section designing end */
+
+/* -----------------------  blending problem try to solve */
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* result section contents styling start */
+.heading{
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+}
+.circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background:linear-gradient( hsl(252,100%,45%),hsl(241,81%,50%));
+    position: relative;
+    left:43px;
+}
+.percentage{
+    position: absolute;
+    font-size: 60px;
+top:-40px;
+    left: 45px;
+    color:hsl(0, 0%, 100%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.out{
+    position: absolute;
+    left:45px;
+    top:70px;
+    font-size: 24px;
+    color:rgb(182, 190, 196) ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.result-confirmation{
+    width:250px;
+    height: 120px;
+    /* background-color: greenyellow; */
+
+    
+}
+.greet{
+    color:hsl(0, 0%, 100%);
+    font-size: 24px;
+    transform: translate(100px,-10px);
+   
+}
+.per-declare{
+    color:hsl(241, 100%, 89%);
+    transform: translateY(-19px);
+    line-height: 20px;
+    text-align: center;
+
+}
+/* result section content styling end */
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* summary section styling start */
+.summary-head{
+    color:black;
+    transform: translate(20px);
+
+}
+/* first subject styling start */
+.first-subject{
+    width:200px;
+    height: 30px;
+    background-color: hsl(0, 100%,90%);
+    position: relative;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    left: 23px;
+
+}
+.fst{
+    position: absolute;
+    top:-10px;
+    left:25px;
+    color:hsl(0, 100%, 67%)
+}
+img{
+    transform: translateY(5px);
+}
+.marks{
+    position: absolute;
+    top:-10px;
+    left:145px;
+    color:hsl(241,81%,50%);
+}
+.marks-out{
+    position: absolute;
+    top: -10px;
+    left:165px;
+    color: hsl(252, 100%, 67%);
+}
+/*  first subject styling end */
+/* ------------------------------------------------------------------------------------ */
+
+/* second subject styling start */
+.second-subject{
+    width:200px;
+    height: 30px;
+    background-color: hsl(0, 100%,90%);
+    position: relative;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    left: 23px;
+    top:20px;
+
+}
+.snd{
+    position: absolute;
+    top:-10px;
+    left:25px;
+    color:hsl(39, 100%, 56%);
+}
+.marks2{
+    position: absolute;
+    top:-10px;
+    left:145px;
+    color:hsl(241,81%,50%);
+}
+/* /* second subject styling end */ 
+/* ------------------------------------------------------------------------------------- */
+/*  third subject styling start */ 
+.third-subject{
+    width:200px;
+    height: 30px;
+    background-color: hsl(0, 100%,90%);
+    position: relative;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    left: 23px;
+    top:40px;
+
+}
+.tnd{
+    position: absolute;
+    top:-10px;
+    left:25px;
+    color:hsl(166, 100%, 37%);
+}
+.marks3{
+    position: absolute;
+    top:-10px;
+    left:145px;
+    color:hsl(241,81%,50%);
+}
+ /* third subject styling end */
+
+ /* --------------------------------------------------------------------------------------------- */
+
+ /* fourth subject styling start */
+.four-subject{
+    width:200px;
+    height: 30px;
+    background-color: hsl(0, 100%,90%);
+    position: relative;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    left: 23px;
+    top:60px;
+
+}
+.fnd{
+    position: absolute;
+    top:-10px;
+    left:25px;
+    color:hsl(234, 85%, 45%);
+}
+.marks4{
+    position: absolute;
+    top:-10px;
+    left:145px;
+    color:hsl(241,81%,50%);
+}
+/* fourth subject styling end */
+/* --------------------------------------------------------------------------------------------- */
+/* subject section end */
+
+
+/* button section start */
+.btn{
+    transform: translate(20px,80px);
+    width:200px;
+    height: 30px;
+    background-color: blue;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border:none;
+   margin-top: 5px;
+}
+.btn2{
+    transform: translate(20px);
+    width:200px;
+    height: 30px;
+    background-color: blue;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border:none;
+   margin-top: 100px;
+}
+/* button section end */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* link section start */
+.submit{ 
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+
+}
+.save{
+     
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+        
+    
+    
+}
+/* link section end */
+
+/* media queries start  */
+
+
+
+/* ! using media queries for better ui interface */
+@media screen and (max-width:515px){
+    .Result{
+        border-top-right-radius: 18px;
+    }
+     .Summary{
+        border-bottom-left-radius: 18px;
+        
+    } 
+    
+}
+

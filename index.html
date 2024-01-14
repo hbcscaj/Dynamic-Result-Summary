@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Result Summary component🤣 </title>
+    <!-- external css -->
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+<!-- main-container start --> 
+<div class="mc">
+    <!-- container for result different section -->
+    <div class="Result">
+<!-- heading  --> 
+<p class="heading"> Your Result</p>
+<!-- circle -->
+<div class="circle">
+    <!-- percentage -->
+      <p class="percentage"></p>
+      <!--  from out of -->
+      <p class="out"> of 100</p>
+
+</div>
+<!-- confirmation result -->
+<div class="result-confirmation">
+    <p class="greet">fear🤭</p>
+    <p class="per-declare">
+
+        You scored higher Than 65%  of <br>  the people who have taken <Br> these tests
+    </p>
+    
+</div>
+<!-- confirmation result end -->
+    </div>
+    <!-- ------------------------------------- -->
+
+    <div class="Summary">
+
+        <p class="summary-head"> Summary</p>
+        <!-- subjects  -->
+        <div>  
+            <!-- above div is adjust going items below basically layout can,t disturbs -->
+
+            <!-- first subject -->
+    
+        <div class="first-subject"> <img src="icon-reaction.svg""> <p class="fst">Micro </p> 
+            <p class="marks"></p> <p class="marks-out"> /100</p></div>
+    </div>
+    <!-- first subject end -->
+ <!-- ------------------------------------------------------------------------------------------- -->
+
+
+    <!-- second subject -->
+    <div class="second-subject">
+        <img src="icon-memory.svg""> <p class="snd">C++ </p> 
+            <p class="marks2"></p> <p class="marks-out"> /100</p></div>
+            <!-- second subject end -->
+
+<!-- ------------------------------------------------------------------------------ -->
+
+
+            <!-- third subject -->
+            <div class="third-subject">
+                <img src="icon-verbal.svg""> <p class="tnd"> Green.IT </p> 
+                    <p class="marks3"></p> <p class="marks-out"> /100</p></div>
+                    <!-- third subject end -->
+<!-- -------------------------------------------------------------------------------------->
+
+
+                    <!-- fourth subject -->
+                    <div class="four-subject">
+                        <img src="icon-visual.svg""> <p class="fnd"> Web</p> 
+                            <p class="marks4"></p> <p class="marks-out"> /100</p></div>
+                            <!-- fourth subject end -->
+<!-- --------------------------------------------------------------------------------------- -->
+
+                            <!--  link  for submiting -->
+                            <button class="btn"> <a href="#" onclick="pera()" class="submit"> Continue </a></button>
+                            <button class="btn2"> <a href="#" onclick="Save()" class="save"> Save </a> </button>
+                           <!-- link end -->
+            </div>
+            
+            
+        
+
+    </div>
+    <!--  container section end -->
+</div>
+<!-- main container end -->
+
+<!-- ! internal javascript start start-->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+<script>
+    // getting value from user
+var a=Number(prompt("enter micro-processor 🥴 marks"));
+var b=Number(prompt("enter C++ marks 🤪"));
+var c=Number(prompt("enter Green it 🧐 marks"));
+var d=Number(prompt("enter Web 😄marks"));
+var save;
+// --------------------------------------------------------------------------------------------------------------------
+
+
+// query for adding data in html tags
+var fst=document.querySelector(".marks");
+fst.textContent=a;
+var snd=document.querySelector(".marks2");
+snd.textContent=b;
+var tnd=document.querySelector(".marks3");
+tnd.textContent=c;
+var fnd=document.querySelector(".marks4");
+fnd.textContent=d
+// query for adding data in html tags end
+// ---------------------------------------------------------------------------------------------------------------------
+
+
+
+// result operation total and percentage
+
+var total=a+b+c+d;
+var per=total*100/400;
+
+// operation end!
+// -----------------------------------------------------------
+
+// calling function-on click 
+function pera() {
+document.querySelector(".btn").style="background-color:green;"
+    // percentage in html tags
+    var Per=document.querySelector(".percentage");
+    Per.textContent=parseInt(per);
+    // generating reaction on percentage
+    if(per>80){
+        var emoji=document.querySelector(".greet");
+        console.log(emoji)
+        emoji.textContent="Keep🥰";
+        
+    }
+ else if(per>=50 || per==80)
+ {  var emo=document.querySelector(".greet")
+    console.log(emo)
+    emo.textContent="improve😘"
+ } 
+ else if(per<50)
+ {
+var emote=document.querySelector(".greet")
+emote.textContent="Sad😞"
+ }
+   
+}
+// calling save function on click event
+function Save(){
+    alert("Your Percentage is saved!");
+    per=save;
+    console.log(save)
+   
+}
+// javascript end
+</script>
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+
+    
+</body>
+</html>
